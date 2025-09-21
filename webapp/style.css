@@ -1,0 +1,111 @@
+@keyframes fadein {
+    from {
+        opacity:0%; 
+        transform:translateY(10px)
+    } to {
+        opacity:100%
+    }
+}
+
+@keyframes bounce {
+    from {
+
+    } to {
+        transform:translateY(-15px)
+    }
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    margin-top: 3%;
+}
+
+div h1 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+div h2 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+div {
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding:15px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-style:solid;
+    border-width:5px;
+    border-radius: 5px;
+    border-color: purple;
+    animation-name:fadein;
+    animation-duration: 1s;
+}
+
+.button_container {
+    width:fit-content;
+    background-color: transparent;
+    border-width: 0px;
+    animation-delay:0.3s;
+    animation-fill-mode: both;
+}
+
+.button {
+    width:fit-content;
+    animation:none;
+    display:inline-block;
+    margin-top: 0px;
+    border-width: 4px;
+    transition:transform 0.3s;
+}
+
+table {
+    border-collapse: collapse;
+    color:white;
+    text-align:center;
+}
+
+.shrimp:hover {
+    animation-name:bounce;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+th {
+    border:4px solid purple;
+    padding:5px;
+}
+
+td {
+    border:2px solid purple;
+    padding:5px;
+}
+
+.button:hover {
+    transform:translateY(-3px);
+    background-color: rgb(50, 50, 50)
+}
+
+.video_container {
+    animation-delay: 0.6s;
+    animation-fill-mode:both;
+}
+
+a:visited {
+    color:purple;
+}
+
+a {
+    color:lightgray
+}
+
+.the-woag { 
+    font-kerning: auto;
+}
